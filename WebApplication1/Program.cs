@@ -317,29 +317,19 @@ DoseConfig.Initialize(builder.Configuration);
 //  CONFIGURAR MIDDLEWARES - IMPORTANTE: ORDEN
 // ==========================================
 
-// ✅ Swagger - DEBE IR ANTES de UseRouting
-if (app.Environment.IsDevelopment())
+// ✅ Swagger - Habilitado en TODOS los entornos (Development + Production)
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ferova API V1");
-        c.RoutePrefix = "api-docs"; // ✅ Esto hace que Swagger esté en /api-docs
-        // c.RoutePrefix = string.Empty; // ✅ Si quieres que esté en la raíz
-    });
-}
-
-// ✅ HTTPS (solo en producción)
-if (!app.Environment.IsDevelopment())
-{
-    app.UseHttpsRedirection();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ferova API V1");
+    c.RoutePrefix = "api-docs";
+});
 
 // ✅ CORS
 app.UseCors("AllowAll");
 
 // ✅ Routing
-app.UseRouting(); // ⚠️ IMPORTANTE: Debe estar antes de UseAuthentication/UseAuthorization
+app.UseRouting();
 
 // ✅ Autenticación y Autorización
 app.UseAuthentication();
@@ -347,6 +337,17 @@ app.UseAuthorization();
 
 // ✅ Mapear Controladores
 app.MapControllers();
+
+// ✅ Endpoint raíz informativo (para que / no dé 404)
+app.MapGet("/", () => Results.Json(new
+{
+    name = "Ferova API",
+    version = "v1",
+    status = "running",
+    environment = app.Environment.EnvironmentName,
+    docs = "/api-docs",
+    swagger = "/swagger/v1/swagger.json"
+}));
 
 // ==========================================
 // ✅ SUSCRIBIR EVENT HANDLERS DE ACHIEVEMENTS
