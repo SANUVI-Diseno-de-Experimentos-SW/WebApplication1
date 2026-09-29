@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-/**
+
 using MongoDB.Driver;
 using WebApplication1.NutritionDiary.Infrastructure.Persitencia.Models;
 
@@ -450,4 +450,3 @@ public class DatabaseSeeder : IHostedService
         };
     }
 }
-**/
