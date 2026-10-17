@@ -1,4 +1,6 @@
-﻿using WebApplication1.patient_management.Domain.Repositories;
+﻿using WebApplication1.Contexts.IAM.Domain.Models.ValueObjects;
+using WebApplication1.Contexts.IAM.Domain.Repositories;
+using WebApplication1.patient_management.Domain.Repositories;
 using WebApplication1.TreatmentTracking.Domain.Model.Aggregate;
 using WebApplication1.TreatmentTracking.Domain.Model.Queries;
 using WebApplication1.TreatmentTracking.Domain.Model.ValueObjects;
@@ -12,17 +14,20 @@ public class TreatmentQueryServiceImpl : ITreatmentQueryService
     private readonly ITreatmentRepository _treatmentRepository;
     private readonly IDailyDoseRepository _dailyDoseRepository;
     private readonly IPatientRepository _patientRepository;
+    private readonly IUserRepository _userRepository;
     private readonly ILogger<TreatmentQueryServiceImpl> _logger;
 
     public TreatmentQueryServiceImpl(
         ITreatmentRepository treatmentRepository,
         IDailyDoseRepository dailyDoseRepository,
         IPatientRepository patientRepository,
+        IUserRepository userRepository,
         ILogger<TreatmentQueryServiceImpl> logger)
     {
         _treatmentRepository = treatmentRepository;
         _dailyDoseRepository = dailyDoseRepository;
         _patientRepository = patientRepository;
+        _userRepository = userRepository;
         _logger = logger;
     }
 
@@ -84,11 +89,20 @@ public class TreatmentQueryServiceImpl : ITreatmentQueryService
 
         var patientData = patient.ToPrimitives();
         var treatmentData = treatment.ToPrimitives();
-
+        
+        string motherName = null;
+        if (!string.IsNullOrEmpty(patientData.MotherId))
+        {
+            var motherId = await _userRepository.FindByIdAsync(new UserId(patientData.MotherId));
+            motherName = $"{motherId.Name} {motherId.Lastname}";
+        }
+        
         return new
         {
             patientId = patientData.Id,
             patientName = $"{patientData.Name} {patientData.LastName}",
+            patientYearsOld = patientData.BirthDate != default(DateTime) ? (int?)((DateTime.UtcNow - patientData.BirthDate).TotalDays / 365.25) : null,
+            motherName,
             riskLevel = treatment.RiskScore.RiskLevel.ToStringValue(),
             score = treatment.RiskScore.Score,
             adherenceScore = treatmentData.AdherenceScore,
