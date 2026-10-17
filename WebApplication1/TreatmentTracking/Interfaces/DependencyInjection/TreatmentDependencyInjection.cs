@@ -1,5 +1,7 @@
 ﻿using WebApplication1.AchievementsRewards.Domain.Repositories;
 using WebApplication1.AchievementsRewards.Infrastructure.Persitencia.MongoDb.Repository;
+using WebApplication1.Contexts.IAM.Domain.Repositories;
+using WebApplication1.iam.infrastructure.Persitencia.MongoDb.Repositories;
 using WebApplication1.patient_management.Domain.Repositories;
 using WebApplication1.patient_management.Infrastructure.Persitencia.MongoDb.Repositoreis;
 using WebApplication1.shared.infrastructure.Events;
@@ -24,6 +26,7 @@ public static class TreatmentDependencyInjection
         services.AddScoped<IPatientRepository, MongoPatientRepository>();
         services.AddScoped<IAchievementRepository, MongoAchievementRepository>();
         services.AddScoped<IBadgeRepository, MongoBadgeRepository>();
+        services.AddScoped<IUserRepository, MongoUserRepository>();
 
         // ==========================================
         // SERVICIOS DE APLICACIÓN
