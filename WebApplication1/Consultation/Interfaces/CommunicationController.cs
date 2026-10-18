@@ -1,4 +1,4 @@
-﻿﻿using WebApplication1.Consultation.Interfaces.Assemblers;
+﻿using WebApplication1.Consultation.Interfaces.Assemblers;
 using WebApplication1.Consultation.Interfaces.Facades;
 using WebApplication1.Consultation.Interfaces.Resources;
 using WebApplication1.shared.Attributes;
@@ -68,7 +68,7 @@ public class CommunicationController : ControllerBase
     // ==========================================
     // 2. ENVIAR MENSAJE - MADRE O ENFERMERA
     // ==========================================
-    [HttpPost("messages")]
+    [HttpPost("chat/send-message")]
     [RequireRole("Mother", "Nurse")]
     public async Task<IActionResult> AddMessage([FromBody] AddMessageRequest request)
     {
