@@ -365,7 +365,7 @@ public async Task<IActionResult> RegisterHemoglobinControl([FromBody] RegisterHe
                 };
             }).ToList();
 
-            return Ok(result);
+            return Ok(new {data = result});
         }
         catch (Exception ex)
         {
