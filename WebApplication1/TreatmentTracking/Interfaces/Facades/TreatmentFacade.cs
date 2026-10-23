@@ -130,6 +130,16 @@ public class TreatmentFacade
             throw new Exception("Access denied: This patient is not assigned to you");
         }
     }
+    
+    public async Task<object> GetWeeklyAdherenceAsync(object query)
+    {
+        return await _queryService.GetWeeklyAdherenceAsync((GetWeeklyAdherenceQuery)query);
+    }
+    
+    public async Task<object> GetNextDoseAsync(object query)
+    {
+        return await _queryService.GetNextDoseAsync((GetNextDoseQuery)query);
+    }
 
     // ==========================================
     // MÉTODOS DE PRUEBA
