@@ -445,4 +445,129 @@ public class TreatmentQueryServiceImpl : ITreatmentQueryService
             throw;
         }
     }
+    
+    public async Task<object> GetWeeklyAdherenceAsync(GetWeeklyAdherenceQuery query)
+{
+    var patient = await _patientRepository.FindByIdAsync(query.PatientId);
+    if (patient == null)
+        throw new Exception("Patient not found");
+
+    var treatment = await _treatmentRepository.FindActiveByPatientIdAsync(query.PatientId);
+    if (treatment == null)
+        throw new Exception("Patient does not have an active treatment");
+
+    var doses = await _dailyDoseRepository.FindByTreatmentIdAsync(treatment.Id);
+
+    // Rango: últimos 7 días (incluyendo hoy), de más antiguo a más reciente
+    var today = DateTime.UtcNow.Date;
+    var start = today.AddDays(-6);
+
+    // Indexar por día para lookup O(1)
+    var dosesByDay = doses
+        .GroupBy(d => d.ScheduledDate.Date)
+        .ToDictionary(g => g.Key, g => g.First());
+
+    var result = new List<object>();
+    for (int i = 0; i < 7; i++)
+    {
+        var day = start.AddDays(i);
+        dosesByDay.TryGetValue(day, out var dose);
+
+        string status;
+        int heightPercentage;
+
+        if (dose == null)
+        {
+            // No hay dosis programada ese día (fuera del rango del tratamiento)
+            status = "NO_DOSE";
+            heightPercentage = 0;
+        }
+        else if (dose.Status == DoseStatus.CONFIRMED)
+        {
+            status = "CONFIRMED";
+            heightPercentage = 100;
+        }
+        else if (dose.Status == DoseStatus.OMITTED)
+        {
+            status = "OMITTED";
+            heightPercentage = 30;
+        }
+        else // PENDING
+        {
+            status = "PENDING";
+            // Día futuro o hoy aún no confirmado
+            heightPercentage = day == today ? 50 : 15;
+        }
+
+        result.Add(new
+        {
+            date = day.ToString("yyyy-MM-dd"),
+            dayLabel = day.ToString("ddd", new System.Globalization.CultureInfo("es-ES")),
+            status,
+            heightPercentage
+        });
+    }
+
+    return new
+    {
+        patientId = query.PatientId,
+        treatmentId = treatment.Id,
+        days = result
+    };
+    }
+    public async Task<object> GetNextDoseAsync(GetNextDoseQuery query)
+    {
+        var patient = await _patientRepository.FindByIdAsync(query.PatientId);
+        if (patient == null)
+            throw new Exception("Patient not found");
+
+        var treatment = await _treatmentRepository.FindActiveByPatientIdAsync(query.PatientId);
+        if (treatment == null)
+            throw new Exception("Patient does not have an active treatment");
+
+        var treatmentData = treatment.ToPrimitives();
+        var doses = await _dailyDoseRepository.FindByTreatmentIdAsync(treatment.Id);
+
+        var today = DateTime.UtcNow.Date;
+
+        // Próxima dosis pendiente (hoy o en adelante)
+        var nextDose = doses
+            .Where(d => d.Status == DoseStatus.PENDING && d.ScheduledDate.Date >= today)
+            .OrderBy(d => d.ScheduledDate)
+            .FirstOrDefault();
+
+        if (nextDose == null)
+        {
+            return new
+            {
+                hasNextDose = false,
+                message = "No hay próximas dosis programadas"
+            };
+        }
+
+        var doseDate = nextDose.ScheduledDate.Date;
+        var daysDiff = (int)(doseDate - today).TotalDays;
+
+        string dayLabel = daysDiff switch
+        {
+            0 => "Hoy",
+            1 => "Mañana",
+            _ => doseDate.ToString("dddd", new System.Globalization.CultureInfo("es-ES"))
+        };
+
+        // Capitalizar primera letra (por si "dddd" devuelve minúsculas en algunos runtimes)
+        if (!string.IsNullOrEmpty(dayLabel))
+            dayLabel = char.ToUpper(dayLabel[0]) + dayLabel.Substring(1);
+
+        return new
+        {
+            hasNextDose = true,
+            dailyDoseId = nextDose.Id,
+            scheduledDate = nextDose.ScheduledDate,
+            dayLabel,                                       // "Hoy" | "Mañana" | "Lunes"...
+            dosageHours = treatmentData.DosingHours,        // "08:00"
+            status = nextDose.Status.ToStringValue(),       // "PENDING"
+            daysFromToday = daysDiff                        // 0, 1, 2...
+        };
+    }
 }
