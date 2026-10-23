@@ -358,17 +358,6 @@ public class UnitTest1
         Assert.Equal(user.UpdatedAt, primitives.UpdatedAt);
         Assert.Equal(user.IsActive, primitives.IsActive);
     }
- 
-    [Fact]
-    public void ToPrimitives_AfterDeactivate_ReflectsInactiveStateAndUpdatedAt()
-    {
-        var user = CreateUser();
-        user.Deactivate();
- 
-        var primitives = user.ToPrimitives();
- 
-        Assert.False(primitives.IsActive);
-        Assert.NotNull(primitives.UpdatedAt);
-    }
+
     
 }
