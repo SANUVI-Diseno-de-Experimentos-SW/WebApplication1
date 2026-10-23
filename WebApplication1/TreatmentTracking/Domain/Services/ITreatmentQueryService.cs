@@ -12,4 +12,9 @@ public interface ITreatmentQueryService
     Task<object> GetTreatmentDetailsAsync(GetTreatmentDetailsQuery query);
     Task<object> GetPatientsByRiskLevelAsync(GetPatientsByRiskLevelQuery query);
     Task<object> GetPatientTreatmentDetailAsync(GetPatientTreatmentDetailQuery query);
+    
+    Task<object> GetNextDoseAsync(GetNextDoseQuery query);
+
+    Task<object> GetWeeklyAdherenceAsync(GetWeeklyAdherenceQuery query);
+
 }
