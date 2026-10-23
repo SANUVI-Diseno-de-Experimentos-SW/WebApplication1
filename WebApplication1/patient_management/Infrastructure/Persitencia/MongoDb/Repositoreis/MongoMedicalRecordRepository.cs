@@ -82,6 +82,12 @@ public async Task UpdateAsync(MedicalRecord medicalRecord)
             HemoglobinLevel = c.HemoglobinLevel,
             AnemiaStatus = c.AnemiaStatus
         }).ToList();
+        
+        var antecedentes = data.Antecedentes.Select(a => new AntecedenteDocument
+        {
+            Type = a.Type,
+            Description = a.Description
+        }).ToList();
 
         Console.WriteLine($"🔍 Controls a actualizar: {controls.Count}");
 
@@ -93,7 +99,9 @@ public async Task UpdateAsync(MedicalRecord medicalRecord)
             .Set(x => x.MotivoConsulta, data.MotivoConsulta)
             .Set(x => x.Observaciones, data.Observaciones)
             .Set(x => x.HemoglobinLevel, data.HemoglobinLevel)
-            .Set(x => x.Controls, controls);
+            .Set(x => x.Controls, controls)
+            .Set(x => x.Sintomas, data.Sintomas)         
+            .Set(x => x.Antecedentes, antecedentes);
 
         Console.WriteLine($"🔍 Aplicando update...");
         var result = await _collection.UpdateOneAsync(filter, update);

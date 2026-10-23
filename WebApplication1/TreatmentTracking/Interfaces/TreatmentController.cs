@@ -487,6 +487,58 @@ public class TreatmentController : ControllerBase
             return BadRequest(new { error = ex.Message });
         }
     }
+    
+    // ==========================================
+// 15. ADHERENCIA ÚLTIMOS 7 DÍAS (GRÁFICO) - SOLO NURSE
+// ==========================================
+
+    [HttpGet("patients/{patientId}/weekly-adherence")]
+    [RequireRole("Nurse")]
+    public async Task<IActionResult> GetWeeklyAdherence(string patientId)
+    {
+        try
+        {
+            var nurseId = User.FindFirst("nurseId")?.Value;
+            if (string.IsNullOrEmpty(nurseId))
+                return Unauthorized(new { error = "Nurse ID not found in token" });
+
+            await _facade.ValidateNurseHasPatientAsync(nurseId, patientId);
+
+            var query = new GetWeeklyAdherenceQuery(patientId);
+            var result = await _facade.GetWeeklyAdherenceAsync(query);
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { error = ex.Message });
+        }
+    }
+    
+    // ==========================================
+// 16. PRÓXIMA DOSIS - SOLO NURSE
+// ==========================================
+
+    [HttpGet("patients/{patientId}/next-dose")]
+    [RequireRole("Nurse")]
+    public async Task<IActionResult> GetNextDose(string patientId)
+    {
+        try
+        {
+            var nurseId = User.FindFirst("nurseId")?.Value;
+            if (string.IsNullOrEmpty(nurseId))
+                return Unauthorized(new { error = "Nurse ID not found in token" });
+
+            await _facade.ValidateNurseHasPatientAsync(nurseId, patientId);
+
+            var query = new GetNextDoseQuery(patientId);
+            var result = await _facade.GetNextDoseAsync(query);
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { error = ex.Message });
+        }
+    }
 }
 
 // ==========================================
