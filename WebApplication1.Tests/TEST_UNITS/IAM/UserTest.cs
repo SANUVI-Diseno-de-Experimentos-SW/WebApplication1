@@ -2,7 +2,7 @@
 using WebApplication1.Contexts.IAM.Domain.Models.Enums;
 using WebApplication1.Contexts.IAM.Domain.Models.ValueObjects;
 
-namespace WebApplication1.Tests;
+namespace WebApplication1.Tests.TEST_UNITS.IAM;
 
 public class UserTest
 {
