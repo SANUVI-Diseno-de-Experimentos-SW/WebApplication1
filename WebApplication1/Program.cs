@@ -464,3 +464,5 @@ Console.WriteLine($"📚 Swagger JSON: http://localhost:{port}/swagger/v1/swagge
 Console.WriteLine($"🔗 API Base: http://localhost:{port}/api/users");
 
 app.Run();
+
+public partial class Program { }

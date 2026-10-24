@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AEncoding_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E2_003Fresharper_002Dhost_003FSourcesCache_003F1675dc7b710feeeb3e0bc8728be8a947537155c199480fb23b776e81d459_003FEncoding_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=17fd90b3_002D791c_002D40a2_002Dad89_002D550b1dbd3e25/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AuthenticationIntegrationTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.IAM.StaffRegistrationIntegrationTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.TEST_UNITS.IAM.UserTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_UNITS.IAM.UserTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.IAM.AuthenticationIntegrationTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.IAM.PasswordResetIntegrationTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	</wpf:ResourceDictionary>
