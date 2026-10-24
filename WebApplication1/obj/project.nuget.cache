@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "giCTlxBOIlo=",
+  "dgSpecHash": "eAvE4+09ZvA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pisco\\Desktop\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\Pisco\\RiderProjects\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pisco\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Pisco\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
