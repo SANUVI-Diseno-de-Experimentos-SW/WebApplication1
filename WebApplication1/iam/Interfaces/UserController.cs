@@ -127,6 +127,11 @@ public class UserController : ControllerBase
             _logger.LogWarning(ex, "Error al crear usuario staff");
             return BadRequest(new { error = ex.Message });
         }
+        catch (InvalidOperationException ex)
+        {
+            _logger.LogWarning(ex, "Error al crear usuario staff (usuario duplicado)");
+            return BadRequest(new { error = ex.Message });
+        }
         catch (Exception ex)
         {
             _logger.LogError(ex, "Error inesperado al crear usuario staff");
