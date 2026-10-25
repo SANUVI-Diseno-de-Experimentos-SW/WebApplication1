@@ -1,4 +1,5 @@
-﻿using WebApplication1.Contexts.IAM.Domain.Repositories;
+﻿using System.Globalization;
+using WebApplication1.Contexts.IAM.Domain.Repositories;
 using WebApplication1.HealthyFacility.Domain.Models.Aggregate;
 using WebApplication1.HealthyFacility.Domain.Models.Commands;
 using WebApplication1.HealthyFacility.Domain.Models.Entities;
@@ -80,6 +81,16 @@ public class HealthFacilityCommandServiceImpl : IHealthyFacilityCommandService
 
     public async Task BookAppointmentAsync(BookAppointmentCommand command)
     {
+        // Validar formato de fecha/hora y que la cita sea a futuro
+        ValidateAppointmentDateTime(command.AppointmentDate, command.AppointmentTime);
+
+        // Validar que la posta exista
+        var facility = await _healthFacilityRepository.FindByIdAsync(command.FacilityId);
+        if (facility == null)
+        {
+            throw new Exception("Facility not found");
+        }
+
         // Verificar si ya existe una cita en ese horario
         var existingAppointment = await _appointmentRepository.FindByFacilityAndDateTimeAsync(
             command.FacilityId,
@@ -190,6 +201,28 @@ public class HealthFacilityCommandServiceImpl : IHealthyFacilityCommandService
         if (appointmentData.MotherId != motherId)
         {
             throw new Exception("Esta cita no pertenece a esta madre");
+        }
+    }
+
+    private static void ValidateAppointmentDateTime(string date, string time)
+    {
+        if (!DateOnly.TryParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture,
+                DateTimeStyles.None, out var appointmentDate))
+        {
+            throw new Exception("Invalid appointment date. Expected format: yyyy-MM-dd");
+        }
+
+        if (!TimeOnly.TryParseExact(time, "HH:mm", CultureInfo.InvariantCulture,
+                DateTimeStyles.None, out var appointmentTime))
+        {
+            throw new Exception("Invalid appointment time. Expected format: HH:mm");
+        }
+
+        // Peru (UTC-5) no usa horario de verano
+        var limaNow = DateTime.UtcNow.AddHours(-5);
+        if (appointmentDate.ToDateTime(appointmentTime) <= limaNow)
+        {
+            throw new Exception("Appointment date and time must be in the future");
         }
     }
 
