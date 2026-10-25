@@ -1,12 +1,143 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AEncoding_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E2_003Fresharper_002Dhost_003FSourcesCache_003F1675dc7b710feeeb3e0bc8728be8a947537155c199480fb23b776e81d459_003FEncoding_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=17fd90b3_002D791c_002D40a2_002Dad89_002D550b1dbd3e25/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AuthenticationIntegrationTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=08ffca64_002D9878_002D4604_002D9fb4_002D9c6e25db4ca6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SearchMother_ByExistingDni_ReturnsTheMother" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0b7036ee_002D2f6f_002D4eed_002Db0b5_002D851a4f700e8b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetPatientBasicInfo_NonExistentPatient_Returns404Or400 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.GetPatientBasicInfo_NonExistentPatient_Returns404Or400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=158ebd95_002D60c7_002D4f56_002Dbdc5_002Dda707b84518b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ListByMother_BeforeAssignment_ShowsUnassigned" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.ListByMother_BeforeAssignment_ShowsUnassigned&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=15ee4e3f_002Dfc3b_002D4bd1_002Db612_002D7c0f315a5b98/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ListByMother_AfterAssignment_ShowsAssigned #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.ListByMother_AfterAssignment_ShowsAssigned&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.AssignNurse_ValidPatient_Returns201&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.AssignNurse_MissingPatientId_Returns400&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=17fd90b3_002D791c_002D40a2_002Dad89_002D550b1dbd3e25/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AuthenticationIntegrationTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.IAM.StaffRegistrationIntegrationTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.TEST_UNITS.IAM.UserTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_UNITS.IAM.UserTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.IAM.AuthenticationIntegrationTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.IAM.PasswordResetIntegrationTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests.MotherEndpoints_WithoutToken_Returns401&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests.MotherEndpoints_WithStaffToken_Returns403&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests.MotherToken_IncludesMotherIdClaim&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests.RegisterFoodEntry_MissingFields_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests.RegisterFoodEntry_NegativeQuantity_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests.MotherEndpoints_PatientNotFoundOrNotOwned_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests.SearchFoods_EmptyText_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests.SearchFoods_WithoutTextParameter_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests.SearchFoods_ValidText_Returns200WithoutToken&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests.GetFoodDetails_NonExistentId_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.RegisterPatient_ValidData_Returns201&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.RegisterPatient_UsesMotherIdFromToken_AndAppearsInMyPatients&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.RegisterPatient_NegativeWeight_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.MyPatients_MotherWithoutPatients_ReturnsEmptyList&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.ListByMother_BeforeAssignment_ShowsUnassigned&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.ListByMother_AfterAssignment_ShowsAssigned&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.AssignNurse_ValidPatient_Returns201&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.AssignNurse_MissingPatientId_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.AssignNurse_NonExistentPatient_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.NursePatients_WithoutAssignments_ReturnsEmpty&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.NursePatients_AfterAssignment_ReturnsThePatient&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=43893706_002D0be2_002D4b0a_002Dbcfe_002D5323eeca92c7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ListByMother_AfterAssignment_ShowsAssigned" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.ListByMother_AfterAssignment_ShowsAssigned&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.AssignNurse_ValidPatient_Returns201&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5387f594_002D68e3_002D4b84_002Dad16_002D4563e7620416/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetPatientBasicInfo_NonExistentPatient_Returns404Or400" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.GetPatientBasicInfo_NonExistentPatient_Returns404Or400&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=53ab8406_002D109c_002D49f6_002Dbe5f_002D6a98c89e5fc0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateMedicalRecord_AssignedPatient_Returns201" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.CreateMedicalRecord_AssignedPatient_Returns201&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.CreateMedicalRecord_PatientAssignedToAnotherNurse_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.CreateMedicalRecord_MissingRequiredFields_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.GetMedicalRecord_AfterCreation_ReturnsSavedData&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.GetMedicalRecord_BeforeCreation_Returns404Or400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.GetMedicalRecord_PatientAssignedToAnotherNurse_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.RegisterHemoglobin_ValidLevel_Returns201&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.RegisterHemoglobin_MissingLevel_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.RegisterHemoglobin_PatientAssignedToAnotherNurse_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.GetControls_AfterRegisteringHemoglobin_ReturnsTheControl&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.GetControls_NurseWithoutAccess_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.HemoglobinEvolution_OwnPatient_Returns200&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.Discharge_MissingPatientId_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.Discharge_PatientAssignedToAnotherNurse_Returns400&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=61875b19_002D4b31_002D4982_002Db9c5_002D67f6ee30e2c7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AssignNurse_MissingPatientId_Returns400 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.AssignNurse_MissingPatientId_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.AssignNurse_NonExistentPatient_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.NursePatients_WithoutAssignments_ReturnsEmpty&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.NursePatients_AfterAssignment_ReturnsThePatient&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=70fb82a4_002Df72b_002D48de_002Da9da_002D48629b810cfd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PatientManagementSecurityTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientManagementSecurityTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8e1ee9fc_002Db290_002D4828_002D96b0_002Dd8afda1d9d83/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Discharge_PatientAssignedToAnotherNurse_Returns400 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.Discharge_PatientAssignedToAnotherNurse_Returns400&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c12ffc35_002D9744_002D4fa1_002D99a4_002Dd9edb8f7d558/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AssignNurse_ValidPatient_Returns201" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.AssignNurse_ValidPatient_Returns201&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=caadbeeb_002D607a_002D45a7_002D87a9_002Df8466ea74981/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Discharge_PatientAssignedToAnotherNurse_Returns400 #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.Discharge_PatientAssignedToAnotherNurse_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.GetControls_NurseWithoutAccess_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.RegisterHemoglobin_PatientAssignedToAnotherNurse_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.CreateMedicalRecord_PatientAssignedToAnotherNurse_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.GetMedicalRecord_PatientAssignedToAnotherNurse_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientManagementSecurityTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ed81fd9d_002D3159_002D4923_002D8c91_002Dce0798816004/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="NursePatients_AfterAssignment_ReturnsThePatient" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.NursePatients_AfterAssignment_ReturnsThePatient&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.GetPatientBasicInfo_ExistingPatient_Returns200&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.GetPatientBasicInfo_NonExistentPatient_Returns404Or400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.SearchMother_ByExistingDni_ReturnsTheMother&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientManagementSecurityTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ee813f25_002D2697_002D46a5_002Db7fe_002Db6e60db8c34e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AssignNurse_MissingPatientId_Returns400" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.AssignNurse_MissingPatientId_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.GetPatientBasicInfo_NonExistentPatient_Returns404Or400&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f10ed478_002Dfd53_002D4ac3_002D9759_002D09f3f005789e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Discharge_PatientAssignedToAnotherNurse_Returns400" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
