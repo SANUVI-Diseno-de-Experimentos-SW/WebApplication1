@@ -154,4 +154,9 @@ public class TreatmentFacade
     {
         return await _commandService.ForceConfirmDoseForTestingAsync(dailyDoseId);
     }
+
+    public async Task ValidatePatientBelongsToMotherAsync(string patientId, string motherId)
+    {
+        await ValidateMotherHasPatientAsync(motherId, patientId);
+    }
 }
