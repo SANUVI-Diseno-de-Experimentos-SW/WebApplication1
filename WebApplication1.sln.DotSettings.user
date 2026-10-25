@@ -90,15 +90,21 @@
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests.NursePatients_AfterAssignment_ReturnsThePatient&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=70fb82a4_002Df72b_002D48de_002Da9da_002D48629b810cfd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PatientManagementSecurityTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=70fb82a4_002Df72b_002D48de_002Da9da_002D48629b810cfd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PatientManagementSecurityTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientManagementSecurityTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientRegistrationAndAssignmentTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.BookAppointment_ValidData_Returns201&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8e1ee9fc_002Db290_002D4828_002D96b0_002Dd8afda1d9d83/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Discharge_PatientAssignedToAnotherNurse_Returns400 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests.Discharge_PatientAssignedToAnotherNurse_Returns400&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a9d629f1_002D5f28_002D4a8f_002Db8c7_002D1253b337e1f7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="HealthFacilityRegistrationTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.HealthFacilityRegistrationTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c12ffc35_002D9744_002D4fa1_002D99a4_002Dd9edb8f7d558/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AssignNurse_ValidPatient_Returns201" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -116,6 +122,24 @@
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.NutritionDiary.NutritiondiaryintegrationTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.MedicalRecordAndHemoglobinTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.PatientManagement.PatientManagementSecurityTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.BookAppointment_AppearsInPatientHistory&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.BookAppointment_PatientOfAnotherMother_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.BookAppointment_NonExistentFacility_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.BookAppointment_InvalidDate_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.BookAppointment_PastDate_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.BookAppointment_SlotAlreadyTaken_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.CancelAppointment_OwnAppointment_Returns200_AndStatusChanges&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.CancelAppointment_OfAnotherMother_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.CancelAppointment_NonExistent_Returns400&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.NurseSchedule_WithoutAppointments_ReturnsEmptyList&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.NurseSchedule_AfterBooking_ShowsTheAppointment&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.NurseSchedule_OtherNurse_DoesNotSeeTheAppointment&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.NextAppointment_WithoutAppointments_Returns404&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.NextAppointment_AfterBooking_Returns200&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests.NextAppointment_AfterCancelling_Returns404&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.AppointmentTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.HealthFacilitySecurityTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.HealthFacilityRegistrationTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ed81fd9d_002D3159_002D4923_002D8c91_002Dce0798816004/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="NursePatients_AfterAssignment_ReturnsThePatient" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
