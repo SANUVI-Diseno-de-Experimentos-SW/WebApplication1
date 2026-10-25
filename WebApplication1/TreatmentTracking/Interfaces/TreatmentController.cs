@@ -249,6 +249,9 @@ public class TreatmentController : ControllerBase
                 return BadRequest(new { error = "Mother ID not found in token" });
             }
 
+            // Validar que el paciente pertenece a la madre autenticada
+            await _facade.ValidatePatientBelongsToMotherAsync(patientId, motherId);
+
             var query = new GetPatientDoseHistoryQuery(patientId);
             var result = await _facade.GetPatientDoseHistoryAsync(query);
 
