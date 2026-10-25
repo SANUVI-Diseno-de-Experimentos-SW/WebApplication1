@@ -105,6 +105,11 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a9d629f1_002D5f28_002D4a8f_002Db8c7_002D1253b337e1f7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="HealthFacilityRegistrationTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.HealthyFacility.HealthFacilityRegistrationTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.TreatmentTracking.TreatmentSecurityTests.Endpoints_WithoutToken_Returns401&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.TreatmentTracking.TreatmentSecurityTests.Endpoints_WithWrongRole_Returns403&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.TreatmentTracking.TreatmentLifecycleTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.TreatmentTracking.DoseTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::8F6F3417-224B-42B3-A030-E2841C5814D5::net9.0::WebApplication1.Tests.TEST_INTEGRATION.TreatmentTracking.RiskTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c12ffc35_002D9744_002D4fa1_002D99a4_002Dd9edb8f7d558/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AssignNurse_ValidPatient_Returns201" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
